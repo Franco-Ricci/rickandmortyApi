@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Handjet:wght@300;500;700&display=swap");
+
+body {
+  background-image: linear-gradient(
+    to top,
+    #a13982 0%,
+    #c77f77 24%,
+    #c8646f 30%,
+    #e7627d 46%,
+    #b8235a 59%,
+    #801357 71%,
+    #3d1635 84%,
+    #3d1635 100%
+  );
+  font-family: "Handjet", cursive;
+}
+
+.main__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main__title {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0px;
+  color: white;
+}
+
+.main__options {
+  display: flex;
+  flex-direction: column;
+}
+.character__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+  justify-items: center;
+}
+
+.title__name,
+.status__text,
+.species__text,
+.gender__text,
+.origin__text {
+  color: rgb(255, 244, 244);
+}
+
+.filter__select{
+  padding:5px;
+  border-radius: 50px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.input__search{
+  padding:10px;
+  border-radius: 50px;
+  font-weight: 700;
+}
+.buttons__container {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0px 50px;
+  gap: 50px;
+}
+
+.btn {
+  padding: 20px;
+  border-radius: 30px;
+  outline: none;
+  border: rgb(139, 10, 89) 2px solid;
+  background-color: rgb(236, 200, 236);
+  font-family: "Handjet", cursive;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  box-shadow: 0px 4px 8px rgb(45 35 66 / 40%),
+    0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px rgb(243, 165, 243);
+  transform: translateY(-2px);
+  
+}
+.btn:active {
+  border: rgb(108, 39, 169) 2px solid;
+  
+  transform: translateY(1px);
+}
+
+.text__error{
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  color: #fce3ec;
+  font-size: 2em;
+}
